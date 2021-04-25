@@ -18,26 +18,26 @@
 9. Line 11 will not print out anything. THe code causes an error because the 'i' in the for loop is defined as a let which means that it is only defined in the for loop and not outside of it. Since the console.log is outside of the for loop, there will be an error where the 'i' is not defined.
 10. Line 12 will print out 3 because the function is finding the 'length'. the length is const and is defined at the beginning of the function. The length is set as prices.length which is the size of the prices. Therfore the console should be printing out 3. 
 11.  This function will return an array called 'discounted'. This array will be the discountedPrice of each of the prices using the given discount. In this example, array that will be returned is [50, 100, 150].
-12.  a. student.name 
-     b. student['Grad Year']
-     c. student.greeting()
-     d. student['Favorite Teacher'].name
-     e. student.courseLoad[0]  
-13. a. '3' + 2 = '32' since integers map to their exact string reperesntatio. 
-    b. '3' - 2 = 1
-    c. 3 + null = 3 
-    d. '3' + null = '3null'
-    e. true + 3 = 4 since true maps to 1 
-    f. false + null = 0
-    g. '3' + undefined = '3undefined' 
-    h. '3' - undefined = 'NaN' 
+12.  a. student.name  <br>
+     b. student['Grad Year'] <br>
+     c. student.greeting() <br>
+     d. student['Favorite Teacher'].name <br>
+     e. student.courseLoad[0]  <br>
+13. a. '3' + 2 = '32' since integers map to their exact string representation. <br>
+    b. '3' - 2 = 1  since  this is subtraction, the 3 becomes a number <br> 
+    c. 3 + null = 3  since null maps to 0 < br> 
+    d. '3' + null = '3null'  since the  null becomes its exact string representation <br>
+    e. true + 3 = 4 since true maps to 1 <br>
+    f. false + null = 0  since both false and null maps to the number 0 <br>
+    g. '3' + undefined = '3undefined' since the undefined becomes its exact string representation<br>
+    h. '3' - undefined = 'NaN'  since this is subtraction, undefined becomes numeric which means it becomes NaN <br>
 
-14. a. '2' > 1              true, since string '2' becones a number 2
-    b. '2' < '12'           false, since compares letter by letter starting from the first characters.  
-    c. 2 == '2'             true, since '2' becomes a number 2 
-    d. 2 === '2'            false, since the values are of differnt types
-    e. true == 2            false, since true becomes the number 1 
-    f. true == Boolean(2)   true, since at least one of the comparison is true.
+14. a. '2' > 1              true, since string '2' becones a number 2 <br>
+    b. '2' < '12'           false, since compares letter by letter starting from the first characters.  <br> 
+    c. 2 == '2'             true, since '2' becomes a number 2  <br>
+    d. 2 === '2'            false, since the values are of differnt types <br>
+    e. true == 2            false, since true becomes the number 1 <br> 
+    f. true == Boolean(2)   true, since at least one of the comparison is true. <br> 
 15. THe difference between the '==' and '===' operators is that "==" is a non strict equality test where as long as they equal eachother, it's true. "===" is for strict equality test where it will check to see if the type is the same. 
 16. code in JS file part1b-question16.js
 17. The result will be tha newArr = [2, 4, 6]. So we first go to the function modifyArray since it is being called. Then in the for loop, it will go through the array which is [1, 2, 3]. Then in that for loop, it will push callback(array[i]) where the callback is replaced with doSomething. So the for loop is actually executing newArr.push(doSomething(array[i])). And in doSomething(num), it is just multiplying the number by two so the modifyArray is just multiplying all the numbers in the original array by 2. 
