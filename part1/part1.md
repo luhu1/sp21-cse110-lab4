@@ -41,5 +41,5 @@
 15. THe difference between the '==' and '===' operators is that "==" is a non strict equality test where as long as they equal eachother, it's true. "===" is for strict equality test where it will check to see if the type is the same. 
 16. code in JS file part1b-question16.js
 17. The result will be tha newArr = [2, 4, 6]. So we first go to the function modifyArray since it is being called. Then in the for loop, it will go through the array which is [1, 2, 3]. Then in that for loop, it will push callback(array[i]) where the callback is replaced with doSomething. So the for loop is actually executing newArr.push(doSomething(array[i])). And in doSomething(num), it is just multiplying the number by two so the modifyArray is just multiplying all the numbers in the original array by 2. 
-18. code in JS file 
+18. code in JS file part1b-question18.js
 19. The output of the code is that it will print out 1, then 4, then 3, and then 2. 
